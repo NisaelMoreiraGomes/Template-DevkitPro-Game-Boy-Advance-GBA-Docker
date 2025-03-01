@@ -48,9 +48,19 @@ sh ./scripts/build.sh
 
 Se tudo tiver corrido bem, você verá um arquivo `workspacegba.gba` e também um arquivo `workspacegba.elf`, além de um novo diretório chamado `build`.
 
-## Isso é tudo?
+## IntelliSense Visual Studio Code
 
-Sim e não. No futuro, eu pretendo adicionar o suporte ao Highlighting do Visual Studio Code para a `libtonc` e as `libs do devkitpro`, bem como, possíveis melhorias que eu for percebendo ao longo do meu aprendizado de GBA.
+Eu tenho que admitir que não estou muito feliz com o resultado, mas funciona. Caso queira muito ter um IntelliSense no Visual Studio Code, execute o seguinte comando:
+
+```shell
+sh ./scripts/copy_libs.sh
+```
+
+Feito isso, basta reiniciar o editor e tudo deverá funcionar bem.
+
+Só consegui pensar em duas opções, utilizar a extensão Dev Container e desenvolver dentro do contêiner, ou copiar as libs para o projeto para que o IntelliSense funcionasse. Optei pela segunda.
+
+A meu ver, desenvolver dentro do contêiner quebra a beleza do projeto como ele está agora, que é usar o contêiner apenas para compilar. Desenvolver dentro dele não é algo que eu gostaria, mas também não estou feliz em ter que copiar as libs para o projeto, pois também quebra a magia da coisa. Sou extremamente leigo no uso de Docker, se você souber uma maneira de superar esse dilema, por favor, me ajude.
 
 ## Agradecimentos
 
