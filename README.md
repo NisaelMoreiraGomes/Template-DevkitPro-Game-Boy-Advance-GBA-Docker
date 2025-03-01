@@ -12,7 +12,7 @@ Então, rode o script `build_docker_image.sh`, você pode rodar com o seguinte c
 sh ./scripts/build_docker_image.sh
 ```
 
-Só é preciso rodar esse script uma única vez, assim, criarmos uma Imagem Docker chamada `gba-dev`.
+Só é preciso rodar esse script uma única vez, assim, criamos uma Imagem Docker chamada `gba-dev`.
 
 Mesmo se você baixar esse projeto novamente, não precisa rodar esse script, uma vez que, você já tenha a imagem criada.
 
@@ -36,7 +36,7 @@ Feito isso, a room do seu jogo será gerada. Para sair do bash do contêiner, us
 exit
 ```
 
-Ao fazer isso, o contêiner será excluído, evitando o acúmulo de múltiplos contêineres.
+Ao fazer isso, o contêiner será encerrado e excluído, evitando o acúmulo de múltiplos contêineres.
 
 ## Compilação
 
